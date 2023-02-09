@@ -20,7 +20,7 @@
     @include("mtnco.navbar")
 
     <!-- ***** Reservation Us Area Starts ***** -->
-<section class="section" id="reservation" style="position:relative; left:80px; top:-200px;" >
+<section class="section" id="reservation" style="position:relative; left:80px; top:-250px;" >
     <div class="container">
         <div class="row">
 
@@ -52,12 +52,7 @@
                           </fieldset>
                         </div>
 
-                        <div class="col-lg-6 col-sm-12">
-                        <h6 style="color:black;">License Number</h6>
-                          <fieldset>
-                            <input name="license_number" type="text" id="" placeholder="" required="">
-                          </fieldset>
-                        </div>
+                        
 
 
 

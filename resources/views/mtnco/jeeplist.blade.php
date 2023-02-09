@@ -50,9 +50,9 @@
                             <tr>
                                 <th>Ser</th>
                                 <th>V_ID</th>
-                                <th>V_Name</th>
-                                <th>License No.</th>
-                                <th>KM Read</th>
+                                <th>Veh</th>
+                            
+                                <th>KM</th>
                                 <th>Fuel</th>
                                 <th>Mileage/L</th>
                                 <th>Last Maint</th>
@@ -74,7 +74,7 @@
                             <td>{{$data->v_id}}</td>
                             <td>{{$data->v_name}}</td>
 
-                            <td>{{$data->license_number}}</td>
+                            
                             <td>{{$data->authorized_mileage}}</td>
                             <td>{{$data->authorized_fuel}}</td>
                             <td>{{$data->milage_per_leter}}</td>

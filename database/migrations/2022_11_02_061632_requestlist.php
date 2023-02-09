@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string("start_time");
             $table->string("probable_end_time");
             $table->string("present_fuel");
-            $table->string("last_maintenance_date");
+            
             $table->string("comment");
             $table->timestamps();
         });

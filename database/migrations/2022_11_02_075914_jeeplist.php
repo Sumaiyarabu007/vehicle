@@ -20,7 +20,7 @@ return new class extends Migration
             $table->id();
             $table->string("v_id");
             $table->string("v_name");
-            $table->string("license_number");
+          
             $table->string("authorized_mileage");
             $table->string("authorized_fuel");
             $table->string("collection_date");

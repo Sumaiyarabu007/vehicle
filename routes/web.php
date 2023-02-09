@@ -24,6 +24,7 @@ Route::get("/users",[AdminController::class,"user"]);
 Route::get("/adminjeep",[AdminController::class,"adminjeep"]);
 Route::get("/adminjeep",[AdminController::class,"showadminjeep"]);
 Route::get("/adminjeep1",[AdminController::class,"adminjeep1"]);
+Route::get("/adminjeep1",[AdminController::class,"showadminjeep1"]);
 
 Route::get("/adminton",[AdminController::class,"adminton"]);
 Route::get("/adminton",[AdminController::class,"showadminton"]);
@@ -49,6 +50,12 @@ Route::get("/admin-schedule-lists",[AdminController::class,"adminScheduleList"])
 
 
 //
+
+//editinfo
+Route::get("/editinfo/{id}",[AdminController::class,"editinfo"]);
+Route::post("/editinfolist/{id}",[AdminController::class,"editinfolist"]);
+//
+
 // Predictions
 Route::get("/admin-predictions",[AdminController::class,"predictions"]);
 
@@ -155,10 +162,7 @@ Route::get("/downloadvdra",[MtncoController::class,"downloadvdra"]);
 
 Route::get("/search",[MtncoController::class,"search"]);
 
-//editinfo
-Route::get("/editinfo/{id}",[MtncoController::class,"editinfo"]);
-Route::post("/edit/{id}",[MtncoController::class,"edit"]);
-//
+
 
 Route::get("/mtncohome2",[MtncoController::class,"mtncohome2"]);
 

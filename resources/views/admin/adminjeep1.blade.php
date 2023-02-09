@@ -41,62 +41,35 @@
                                  <th>When in</th>
                                    
                                 <th>Present Fuel</th>
-                            
-
-                            </tr>
-
-                            <tr>
-                                <td>1</td>
-                                <td>01.10.22</td>
-                                <td>Training</td>
-                                <td>Firing range</td>
-                                <td>77km</td>
-                                <td>0730</td>
-                                <td>1350</td>
-                                <td>30L</td>
+                                <th>Rmks</th>
+                                <th>Edit</th>
                               
+
+
                             </tr>
 
+                            @foreach($data as $data)
+                        <tr>
+                        <td>{{$data->id}}</td>
+                            <td>{{$data->date}}</td>
+                            <td>{{$data->authority}}</td>
+                            <td>{{$data->destination}}</td>
+                            <td>{{$data->km_reading}}</td>
+                            <td>{{$data->when_out}}</td>
+                            <td>{{$data->when_in}}</td>
+                            
+                            <td>{{$data->present_fuel}}</td>
+                            
+                            <td>{{$data->comment}}</td>
+                            <td><a href="{{url('/editinfo',$data->id) }}" class="btn btn-success">Edit</a></td>
+                           
 
-                            <tr>
-                                <td>2</td>
-                                <td>03.10.22</td>
-                                <td>Ammenity</td>
-                                <td>GEC circle</td>
-                                <td>60km</td>
-                                <td>1030</td>
-                                <td>1850</td>
-                                <td>12L</td>
-                               
-                            </tr>
+                        </tr>
+                        @endforeach
 
-
-                            <tr>
-                                <td>3</td>
-                                <td>04.10.22</td>
-                                <td>Training</td>
-                                <td>Firing range</td>
-                                <td>77km</td>
-                                <td>0730</td>
-                                <td>1350</td>
-                                <td>30L</td>
-                                
-                            </tr>
-
-
-                            <tr>
-                                <td>4</td>
-                                <td>07.10.22</td>
-                                <td>Training</td>
-                                <td>Firing range</td>
-                                <td>77km</td>
-                                <td>0730</td>
-                                <td>1350</td>
-                                <td>30L</td>
-                                
-                            </tr>
                             
                             </thead>
+
 
 
 

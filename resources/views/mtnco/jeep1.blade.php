@@ -52,7 +52,7 @@
                                    
                                 <th>Present Fuel</th>
                                 <th>Rmks</th>
-                                <th>Edit</th>
+                                
                               
 
 
@@ -71,9 +71,7 @@
                             <td>{{$data->present_fuel}}</td>
                             
                             <td>{{$data->comment}}</td>
-                            <td><a href="{{url('/editinfo',$data->id) }}" class="btn btn-success">Edit</a></td>
                            
-
                         </tr>
                         @endforeach
 

@@ -492,7 +492,7 @@ public function showpickup(Request $request)
         ->join('vdra_records', 'vehicles.id', '=', 'vdra_records.vehicle_id_vdra')
         ->where(DB::raw('date(vdra_records.date_vdra)'),'>=',$startDate)
         ->where(DB::raw('date(vdra_records.date_vdra)'),'<=',$endDate)
-        ->groupBy('vehicles.id','vehicles.v_id','vehicles.v_name','vehicles.v_type','vehicles.license_number','vehicles.authorized_mileage','vehicles.authorized_fuel','vehicles.collection_date','vehicles.last_maintenance_date','vehicles.last_refuelling_date','vehicles.status','vehicles.created_at','vehicles.updated_at','vehicles.next_maintenance_date','vehicles.maintenance_km_limit','vehicles.refuling_limit','vehicles.milage_per_leter','vehicles.present_refueling_date','vdra_records.date_vdra')
+        ->groupBy('vehicles.id','vehicles.v_id','vehicles.v_name','vehicles.v_type','vehicles.authorized_mileage','vehicles.authorized_fuel','vehicles.collection_date','vehicles.last_maintenance_date','vehicles.last_refuelling_date','vehicles.status','vehicles.created_at','vehicles.updated_at','vehicles.next_maintenance_date','vehicles.maintenance_km_limit','vehicles.refuling_limit','vehicles.milage_per_leter','vehicles.present_refueling_date','vdra_records.date_vdra')
 
         ->orderBy('total_km','desc')
         ->get();

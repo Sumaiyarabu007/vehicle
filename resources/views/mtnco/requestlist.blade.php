@@ -64,7 +64,7 @@
                                  <th>Start Time</th>
                                  <th>End Time</th>
                                  <th>Fuel</th>
-                                <th>Last maint date</th>
+                                
                                 <th>Status</th>
                                 <th>Comment</th>
                                 {{-- <th>Send</th> --}}

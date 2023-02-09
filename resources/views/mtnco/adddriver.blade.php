@@ -110,7 +110,7 @@
                         </div>
 
                         <br> 
-                        <div class="col-lg-6 col-sm-12">
+                        <div class="col-lg-12 col-sm-12">
     <h6 style="color:black;">Comments</h6>
       <fieldset>
         <textarea name="comment" rows="6" id="message" placeholder="" required=""></textarea>

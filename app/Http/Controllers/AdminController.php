@@ -12,6 +12,7 @@ use App\Models\Pickuplist;
 use App\Models\Driverlist;
 use App\Models\SheduleRequest;
 use App\Models\Vehicle;
+use App\Models\Infolist;
 use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
@@ -49,6 +50,43 @@ class AdminController extends Controller
         })->get();
         return view("admin.adminjeep",compact("data"));
     }
+
+    
+    public function adminjeep1()
+{
+    $data=user::all();
+    return view("admin.adminjeep1",compact("data"));
+}
+
+public function showadminjeep1(Request $request)
+{
+    $data=infolist::all();
+    return view("admin.adminjeep1",compact("data"));
+}
+
+public function editinfo($id)
+{
+    $data= infolist::find($id);
+    return view("admin.editinfo",compact("data"));
+}
+
+public function editinfolist(Request $request, $id)
+{
+    $data= infolist::find($id);
+    $data->date =  $request->date;
+    $data->authority =$request->authority;
+    $data->destination =$request->destination;
+    $data->km_reading =$request->km_reading;
+    $data->when_in =$request->when_in;
+    $data->when_out =$request->when_out;
+    $data->present_fuel =$request->present_fuel;
+    $data->comment =$request->comment;
+    $data->save();
+    return redirect() ->back() ;
+
+}
+
+
 //
 
 //adminton

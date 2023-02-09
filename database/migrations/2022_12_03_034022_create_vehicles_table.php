@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('v_id');
             $table->string('v_name');
             $table->string('v_type');
-            $table->string('license_number');
+            
             $table->string('authorized_mileage');
             $table->string('authorized_fuel');
             $table->dateTime('collection_date')->nullable();

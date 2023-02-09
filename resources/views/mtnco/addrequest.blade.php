@@ -156,11 +156,11 @@
     </div> --}}
 
 
-    {{-- <div class="col-lg-6">
+   <!-- {{-- <div class="col-lg-6">
 <h6 style="color:black;">Last Maintenance Date</h6>
     <input type="date" name="last_maintenance_date" value="date-two">
 </div> --}}
-
+   -->
 <!--
     <div class="col-lg-6 col-sm-12">
     <h6 style="color:black;">Last Maintenace Date</h6>
@@ -176,10 +176,10 @@
 
 
     <br>
-    <div class="col-lg-6 col-sm-12">
+    <div class="col-lg-12">
     <h6 style="color:black;">Comments</h6>
       <fieldset>
-        <textarea name="comment" rows="6" id="message" placeholder="" ></textarea>
+        <textarea name="comment" rows="3" id="message" placeholder="" ></textarea>
       </fieldset>
     </div>
     <div class="col-lg-12">
